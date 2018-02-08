@@ -116,13 +116,13 @@ for item in node1 node2 node3;do
 
         send "mkdir -p /root/temp\r"
         expect "*#*"
-        send "wget  wget http://192.168.25.120/soft/jdk-7u75-linux-x64.tar.gz -P /root/temp\r"
+        send "wget  wget http://192.168.25.120/soft/jdk-8u162-linux-x64.tar.gz -P /root/temp\r"
 
         expect "*#"
 
         send "cd /root/temp\r"
         expect "*#"
-        send "tar xzvf jdk-7*\r"
+        send "tar xzvf jdk-8u162-linux-x64.tar.gz -C /usr/local/dev/\r"
         expect "*#"
         send "exit\r"
         interact
