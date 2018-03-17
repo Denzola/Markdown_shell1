@@ -23,8 +23,20 @@ for item in node1 node2 node3;do
         send "exit\r"
         interact
         expect eof
-        EOF
+EOF
 done
+
+```
+
+
+**注意** 
+
+```
+执行此test.shell报如下错：
+
+warning: here-document at line 17 delimited by end-of-file (wanted `EOF')
+
+原因是末尾的EOF后面带有空格，EOF前后都不应有空格或其他符号
 
 ```
 
@@ -87,7 +99,7 @@ for item in node1 node2 node3;do
         send "exit\r"
         interact
         expect eof
-        EOF
+EOF
 done
 
 ```
@@ -127,7 +139,7 @@ for item in node1 node2 node3;do
         send "exit\r"
         interact
         expect eof
-        EOF
+EOF
 done
 ```
 
@@ -159,7 +171,7 @@ for item in node1 node2 node3;do
         send "exit\r"
         interact
         expect eof
-        EOF
+EOF
 done
 ```
 
