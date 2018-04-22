@@ -1,5 +1,22 @@
 # Linux定时任务
 
+cron是一个linux下 的定时执行工具，可以在无需人工干预的情况下运行作业。<p>
+　　service crond start    //启动服务<p>
+　　service crond stop     //关闭服务<p>
+　　service crond restart  //重启服务<p>
+　　service crond reload   //重新载入配置<p>
+　　service crond status   //查看服务状态 </p>
+
+
+要把cron设为在开机的时候自动启动，在 /etc/rc.d/rc.local 脚本中加入 /sbin/service crond start 即可
+
+查看当前用户的crontab，输入 crontab -l；
+
+编辑crontab，输入 crontab -e；
+
+删除crontab，输入 crontab -r
+
+
 用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下
 
 ```
@@ -54,7 +71,8 @@ command：要执行的命令，可以是系统命令，也可以是自己编写�
 
 ```
 
-[参考链接](https://www.jianshu.com/p/0712c75e8392)
+[参考链接](https://www.jianshu.com/p/0712c75e8392)<p>
+[参考链接](https://www.cnblogs.com/intval/p/5763929.html)
 
 
 <!--
