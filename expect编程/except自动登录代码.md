@@ -1,5 +1,7 @@
 # except自动登录代码
 
+[参考https://www.cnblogs.com/lzrabbit/p/4298794.html](https://www.cnblogs.com/lzrabbit/p/4298794.html)
+
 ```
 #!/usr/bin/expect -f
 set timeout 30
